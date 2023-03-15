@@ -42,6 +42,11 @@ myFormularioPersonas.addEventListener("submit", (e)=>{
     let sede = data.sede;
     delete data.sede;
     campus[`${sede}`]["Camper"].unshift(data);
+    let nivel = data.sede;
+    delete data.nivel;
+    campus[`${nivel}`]["Camper"].unshift(data);
+    let teams = data.teams;
+    campus[`${teams}`]["Camper"].unshift(data);
     console.log(campus);
     myFormularioPersonas.reset();
 })
