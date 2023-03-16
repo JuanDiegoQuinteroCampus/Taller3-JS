@@ -12,7 +12,7 @@
         <legend>Contactos sedes Campus</legend>
         <form id="myFormularioCampus" >
             <input type="text" name="nombreSede" placeholder="Nombre de las sedes"><br><br>
-            <input type="submit" value="guardar">
+            <input type="submit" value="Guardar">
         </form>
     </fieldset>
 
@@ -20,12 +20,78 @@
         <legend>Datos de los campers CAMPUS:</legend>
         <form id="myFormularioPersonas">
             <select name="sede"></select><br><br>
-            <input type="text" name="nombre" placeholder="Ingrese el nombre del camper"><br> 
-            <input type="tel" name="telefono" placeholder="Ingrese el telefono del camper"><br>
+            <input type="text" name="nombre" placeholder="Ingrese el nombre del camper"><br> <br>
+            <input type="tel" name="telefono" placeholder="Ingrese el telefono del camper"><br><br>
             <input type="text" name="Nivel" placeholder="Ingrese el nivel en el que se encuentra"><br> <br>
-            <input type="submit"  value="Guardar"><br>
-            <input type="radio" name="team1" placeholder="Team1">Team1<br>
-            <input type="radio" name="team2" placeholder="Team2">Team2
+                <fieldset>
+                    <legend>Ingresa tu e-mail</legend>
+                    <input type="email" name="e-mail" placeholder="Ingresa tu correo electronico">
+                </fieldset> <br>
+            <input type="submit"  value="Guardar" ><br>
+            <fieldset>
+                <legend>Seleccione el team en el que se encuentra</legend>
+                <input type="radio" name="team" value="Team1">Team1<br>
+                <input type="radio" name="team" value="Team2">Team2 <br>
+            </fieldset>
+            <fieldset>
+                <legend>Horario del dia</legend>
+                <input type="time" name="hora" value="Hora-entrada"> a <input type="time" name="hora" value="Hora-salida">
+                <fieldset>
+                    <legend>Horario de ser</legend>
+                    <input type="time" name="hora" value="Hora-entrada"> a <input type="time" name="hora" value="Hora-salida">
+                </fieldset>
+                <fieldset>
+                    <legend>Horario de inglés</legend>
+                    <input type="time" name="hora" value="Hora-entrada"> a <input type="time" name="hora" value="Hora-salida">
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Inserta el número del salon y el piso que se encuentra</legend>
+                <input type="number" name="nsalon" placeholder="Ingresa el número del salon" min="1" max="3">
+                <input type="text" name="piso" placeholder="Ingresa el piso en el que se encuentra"> <p>Selecciona el salón en el que se encuentra</p>
+                <select name="salones" >
+                    <option></option>
+                    <option>1.Sputnik</option>
+                    <option>2.Artemis</option>
+                    <option>3.Apolo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion adicional de los campers</legend>
+                <fieldset>
+                    <legend><p>Cual es tu nivel de experiencia en la programación</p></legend>
+                
+                    <select name="salones" >
+                        <option></option>
+                        <option>1 a 3 meses</option>
+                        <option>4 a 6 meses</option>
+                        <option>7 a 11 meses</option>
+                        <option>1 a 2 años</option>
+                        <option>2 años en adelante</option>
+                    </select>
+                    <input type="text" name="tecnologia" placeholder="Ingresa la tecnologia a la que pertenece"> <br>
+                    <p>Ingresa tu pre-requisito(<em>Saberes que tienes para aver obtenido tu nivel</em> ).</p>
+                    <input type="text" name="requisito" placeholder="Ingrese su pre-requisito"> <br>
+                    <p><b> Selecciona si es selectiva u obligatoria</b></p>
+                    <input type="radio" name="Eleccion" value="Selectiva">Selectiva<br>
+                    <input type="radio" name="Eleccion" value="Obligatoria">Obligatoria <br>
+                </fieldset>
+                <fieldset>
+                    <legend><p>Datos de vivienda y transporte</p></legend>
+                    <p><strong>Barrio en el que recide en este momento</strong></p>
+                    <input type="text" name="barrio" placeholder="Ingrese su barrio en el que recide">
+                    <p><strong>¿Cuál es su medio de transporte?</strong></p>
+                    Seleccione cual es su metodo de movilización o medio de transporte:  
+                    <select name="transporte" >
+                        <option value=""></option>
+                        <option value="Moto">Moto</option>
+                        <option value="Carro">Carro</option>
+                        <option value="Bus">Bus</option>
+                        <option value="A-pata">A pata</option>
+                        <option value="Otro...">Otro...</option>
+                    </select>
+            </fieldset>
+            
         </form>
     </fieldset>
     

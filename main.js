@@ -42,12 +42,15 @@ myFormularioPersonas.addEventListener("submit", (e)=>{
     let sede = data.sede;
     delete data.sede;
     campus[`${sede}`]["Camper"].unshift(data);
-    let nivel = data.sede;
+    console.log(campus);
+    myFormularioPersonas.reset();
+    
+    
+})
+
+/* debo hacer ambas cosas por aparte uno de trainers y otro de campers, y otro que sea de las instalaciones, y teniendo en cuenta que ya se abrio un diccionario apora campers y otro para trainers */
+/* let nivel = data.nivel;
     delete data.nivel;
     campus[`${nivel}`]["Camper"].unshift(data);
     let teams = data.teams;
-    campus[`${teams}`]["Camper"].unshift(data);
-    console.log(campus);
-    myFormularioPersonas.reset();
-})
-
+    campus[`${teams}`]["Camper"].unshift(data); */
