@@ -18,13 +18,24 @@ let myFormularioPersonas = document.querySelector("#myFormularioPersonas");
 let campus = {};
 
 // 
-let todo = document.querySelector("#todo")
-let campers= document.querySelector("#campers")
-let Trainers= document.querySelector("#Trainers")
+let todo = document.querySelector("#todo");
+let campers= document.querySelector("#campers");
+let Trainers= document.querySelector("#Trainers");
 
-function total() {
-    let todo = document.getElementById("todo").value;
-    document.getElementById("demo").innerHTML = "You selected: " + todo;
+todo.addEventListener(change), (e)=>{
+    let total = e.target.value;
+    let campers= document.querySelector("#campers");
+    let Trainers= document.querySelector("#Trainers");
+    let todo = document.querySelector("#todo");
+    if(total=="camper"){
+        Trainers.classList.add("div_hide")
+        campers.classList.remove("div_hide")
+        todo.classList.remove("div_hide")
+    }if(total=="Trainers"){
+        campers.classList.remove("div_hide")
+        Trainers.classList.add("div_hide")
+        todo.classList.remove("div_hide")
+    }
 }
     
 myFormularioCampus.addEventListener("submit", (e)=>{
