@@ -18,10 +18,15 @@ let myFormularioPersonas = document.querySelector("#myFormularioPersonas");
 let campus = {};
 
 // 
-
+let todo = document.querySelector("#todo")
 let campers= document.querySelector("#campers")
 let Trainers= document.querySelector("#Trainers")
 
+function total() {
+    let todo = document.getElementById("todo").value;
+    document.getElementById("demo").innerHTML = "You selected: " + todo;
+}
+    
 myFormularioCampus.addEventListener("submit", (e)=>{
     e.preventDefault();
     let data = Object.fromEntries(new FormData(e.target))
