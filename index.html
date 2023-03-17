@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller3-JS</title>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <fieldset>
@@ -16,7 +17,7 @@
         </form>
     </fieldset>
 
-    <fieldset>
+    <fieldset id="campers">
         <legend>Datos de los campers CAMPUS:</legend>
         <form id="myFormularioPersonas">
             <select name="sede"></select><br><br>
@@ -94,6 +95,42 @@
             
         </form>
     </fieldset>
-    
+    <fieldset id="Trainers">
+        <legend>Datos de los Trainers CAMPUS:</legend>
+        <form id="myFormularioTrainers">
+            <select name="sede"></select><br><br>
+            <input type="text" name="nombre" placeholder="Ingrese el nombre del camper"><br> <br>
+            <input type="tel" name="telefono" placeholder="Ingrese el telefono del camper"><br><br>
+            <input type="text" name="Nivel" placeholder="Ingrese el nivel en el que se encuentra"><br> <br>
+                <fieldset>
+                    <legend>Ingresa tu e-mail</legend>
+                    <input type="email" name="e-mail" placeholder="Ingresa tu correo electronico">
+                </fieldset> <br>
+            <input type="submit"  value="Guardar" ><br>
+            <fieldset>
+                <legend>Seleccione el team en el que se encuentra</legend>
+                <input type="radio" name="team" value="Team1">Team1<br>
+                <input type="radio" name="team" value="Team2">Team2 <br>
+            </fieldset>
+            <fieldset>
+                <legend>Horario del dia</legend>
+                <input type="time" name="hora" value="Hora-entrada1"> a <input type="time" name="hora" value="Hora-salida1">
+                
+            </fieldset>
+            <fieldset>
+                <legend>Inserta el número del salon y el piso que se encuentra</legend>
+                <input type="number" name="nsalon" placeholder="Ingresa el número del salon" min="1" max="3">
+                <input type="text" name="piso" placeholder="Ingresa el piso en el que se encuentra"> <p>Selecciona el salón en el que se encuentra</p>
+                <select name="salones" >
+                    <option></option>
+                    <option>1.Sputnik</option>
+                    <option>2.Artemis</option>
+                    <option>3.Apolo</option>
+                </select>
+            </fieldset>
+        </form>
+    </fieldset>
 </body>
 </html>
+
+https://developer.mozilla.org/es/docs/Web/API/HTMLElement/change_event

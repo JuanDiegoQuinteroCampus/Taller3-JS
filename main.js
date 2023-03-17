@@ -19,6 +19,9 @@ let campus = {};
 
 // 
 
+let campers= document.querySelector("#campers")
+let Trainers= document.querySelector("#Trainers")
+
 myFormularioCampus.addEventListener("submit", (e)=>{
     e.preventDefault();
     let data = Object.fromEntries(new FormData(e.target))
